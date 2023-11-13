@@ -13,15 +13,15 @@
     <div class="accordeon" x-data="{isOpen: 0,}">
       <section>
         <button @click="isOpen = (isOpen === 1)?0:1">bouton 1</button>
-        <p x-show="isOpen === 1" x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius rem odio esse adipisci mollitia necessitatibus, facilis repudiandae fugit, error nihil beatae numquam id maxime! Praesentium ducimus modi minima veritatis.</p>
+        <p x-show="isOpen === 1" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius rem odio esse adipisci mollitia necessitatibus, facilis repudiandae fugit, error nihil beatae numquam id maxime! Praesentium ducimus modi minima veritatis.</p>
       </section>
       <section>
         <button @click="isOpen = (isOpen === 2)?0:2">bouton 2</button>
-        <p x-show="isOpen === 2" x-transition.scale.origin.top>Magnam ratione modi, distinctio repellendus neque necessitatibus voluptatum, quisquam laboriosam, repellat facere quis tenetur? Amet illo dolores expedita, exercitationem aut distinctio sed fuga molestias illum eius sapiente voluptates? Molestias, excepturi?</p>
+        <p x-show="isOpen === 2" x-collapse>Magnam ratione modi, distinctio repellendus neque necessitatibus voluptatum, quisquam laboriosam, repellat facere quis tenetur? Amet illo dolores expedita, exercitationem aut distinctio sed fuga molestias illum eius sapiente voluptates? Molestias, excepturi?</p>
       </section>
       <section>
         <button @click="isOpen = (isOpen === 3)?0:3">bouton 3</button>
-        <p x-show="isOpen === 3" x-transition.scale.origin.top>Ad eum vitae veritatis rerum molestiae perferendis delectus ratione, pariatur obcaecati in aspernatur fugiat quos explicabo eos similique esse, libero necessitatibus nisi magnam omnis! Non quidem beatae nam sapiente voluptate?</p>
+        <p x-show="isOpen === 3" x-collapse>Ad eum vitae veritatis rerum molestiae perferendis delectus ratione, pariatur obcaecati in aspernatur fugiat quos explicabo eos similique esse, libero necessitatibus nisi magnam omnis! Non quidem beatae nam sapiente voluptate?</p>
       </section>
     </div>
   </body>
