@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Accordéon horizontal</title>
     <style>
       #accordeon {
@@ -44,8 +45,8 @@
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
-    <ul id="accordeon">
-      <li>
+    <ul id="accordeon" x-data="{isOpen : 0,}">
+      <li :class="{actif:isOpen === 1}" @click="isOpen = (isOpen === 1)?0:1">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -54,7 +55,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{actif:isOpen === 2}" @click="isOpen = (isOpen === 2)?0:2">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
@@ -63,7 +64,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li :class="{actif:isOpen === 3}" @click="isOpen = (isOpen === 3)?0:3">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
