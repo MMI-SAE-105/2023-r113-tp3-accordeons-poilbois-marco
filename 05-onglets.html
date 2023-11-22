@@ -10,6 +10,13 @@
       #parent-panneaux {
         position: relative;
       }
+      [role="tabpanel"] {
+        position: absolute;
+        opacity: 0;
+      }
+      [role="tabpanel"].actif {
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
