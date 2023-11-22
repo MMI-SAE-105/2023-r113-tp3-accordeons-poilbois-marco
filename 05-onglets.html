@@ -26,9 +26,9 @@
       ouvert : 1,
       }">
       <ul role="tablist">
-        <li role="tab" :class="{actif:ouvert === 1,}">Onglet 1</li>
-        <li role="tab" :class="{actif:ouvert === 2,}">Onglet 2</li>
-        <li role="tab" :class="{actif:ouvert === 3,}">Onglet 3</li>
+        <li role="tab" :class="{actif:ouvert === 1,}"><button @click="ouvert = 1">Onglet 1</button></li>
+        <li role="tab" :class="{actif:ouvert === 2,}"><button @click="ouvert = 2">Onglet 2</button></li>
+        <li role="tab" :class="{actif:ouvert === 3,}"><button @click="ouvert = 3">Onglet 3</button></li>
       </ul>
       <div id="parent-panneaux">
         <div role="tabpanel" :class="{actif:ouvert === 1,}">
